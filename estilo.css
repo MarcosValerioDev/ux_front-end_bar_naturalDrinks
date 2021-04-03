@@ -1,0 +1,803 @@
+*{margin:0px; font-family: 'Roboto', sans-serif; image-rendering: optimizeQuality;
+     overflow-y: hidden; overflow-x: hidden;}
+
+.pagePrincipal{
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+}
+
+
+body{
+  
+    scrollbar-base-color: black;
+}
+.laranja{
+    position: absolute;
+    top:2vh;
+    left:50%;
+    width: 15vw;
+}
+
+.pageBackGround{
+    width: 100vw;
+    height: 100vh;
+}
+
+.logo{
+    position: absolute;
+    top:10%;
+    left:10%;
+    width: 30%;
+    z-index: 2;
+    image-rendering: optimizeQuality;
+}
+
+.copo{
+    width: 20%;
+    position: absolute;
+    left: 39%;
+    bottom: 0%;
+    z-index: 1;
+}
+
+.menu{
+    z-index: 1;
+    position: fixed;
+    padding-top: 5%;
+    top:10%;
+    right: -2px;
+    width: 50px;
+    height: 400px;
+    background: rgb(48, 54, 56);
+    border: 2px orange solid;
+    border-top-left-radius:50px;
+    border-bottom-left-radius:50px;
+    
+}
+
+.icoSize{
+    margin: auto;
+    display: block;
+    width: 75%;
+    margin-top: 20%;
+    transition: all 200ms linear;
+}
+
+.icoSize:hover{
+    margin: auto;
+    display: block;
+    width: 75%;
+    margin-top: 20%;
+    transform: scale(1.3);
+    transition: all 200ms linear;
+}
+
+.reservas{
+    position: absolute;
+    top:100vh;
+    width: 100%;
+    height: 100vh;
+    left:0px;
+    background: #221e1e;
+    
+}
+
+.reservasText {
+    width: 80vw;
+    margin-left: 10vw;
+    margin-top:4vh;
+}
+
+.reservasText h4{
+    color: white;
+}
+
+
+.txt_1{
+    z-index: 1;
+    position: absolute;
+    top:70vh;
+    left:12vw;
+    color:white;
+    width: 20vw;
+    height: 20vh;
+    font-size: 300%;
+    
+}
+
+.txt_2{
+    z-index: 1;
+    position: absolute;
+    top:70vh;
+    right:12vw;
+    color:white;
+    width: 20vw;
+    height: 20vh;
+    font-size: 300%;
+}
+
+.tarjaSuperior{
+    padding: 5px;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    
+}
+
+.tarjaICo{
+    width: 120px;
+    margin-left: 16vw; 
+}
+
+.jonnie{
+    width: 80px;
+}
+
+.rodaPe{
+    position: absolute;
+    bottom: 0px;
+    height: 130px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: rgb(0, 0, 0);
+}
+
+.Franqueado{
+    float: right;
+    height: 100%;
+    width:30%;
+    background: orange;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.txtDrinks{
+    display: inline-block;
+    margin-left: 13%;
+    margin-top: 3vh;
+    color: white;
+    width: 20%;
+    height: 30vh;
+    border-right: 1px white solid;
+    padding-right: 3px;
+}
+
+.txtPetiscos{
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 3vh;
+    color: white;
+    width: 20%;
+    height: 30vh;
+    border-right: 1px white solid;
+    padding-right: 3px;
+}
+
+.programacao{
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 3vh;
+    color: white;
+    width: 20%;
+    height: 30vh;
+    overflow-y: hidden;
+    padding-right: 3px;
+}
+
+.textFranqueado{
+font-size: 150%;
+margin: 10%;
+text-align: center;
+}
+
+.map{
+    height: 100%;
+    width: 70%;
+}
+
+.folhas{
+    width: 80vh;
+    position: absolute;
+    top:0px;
+    right: 0px;
+    
+}
+
+.modalMsg{
+    z-index: 3;
+    position: fixed;
+    left:0px;
+    top:0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.8);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 200ms linear;
+}
+
+.modalRS{
+    z-index: 3;
+    position: fixed;
+    left:0px;
+    top:0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.8);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 200ms linear;
+}
+
+.icoRS_Size{
+    z-index: 0;
+    margin-top:12%;
+    margin-left: 10%;
+    width: 70px;
+    transition: all 200ms linear;
+}
+
+.icoRS_Size:hover{
+ transform: scale(1.2);
+    transition: all 200ms linear;
+}
+
+
+.boxMsg{
+    padding: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: absolute;
+    top: 10vh;
+    left: 30vw;
+    width: 40vw;
+    height: 70vh;
+    border: 2px  orange solid;
+    background: rgb(0, 0, 0);
+}
+
+#msg{
+    height: 30vh;
+    border: 0px;
+    
+    margin-bottom:10px;
+}
+
+input{
+    margin-bottom:10px;
+    padding: 4px;
+    border:none;
+    width: 100%;
+}
+
+#bt{
+    margin-bottom:10px;
+    padding: 4px;
+    border:none;
+    width: 100%;
+    color:orange;
+    background: rgb(51, 53, 58);
+    border: 1px rgb(98, 99, 100) solid;
+}
+
+label{
+    color: orange;
+}
+
+#boxTitulo{
+    top:0;
+left:0;
+position: absolute;
+padding: 10px;
+background: orange;
+border: 2px orange solid;
+}
+
+#boxTitulo h4{
+    width: 90%;
+    color:black;
+}
+
+#f_msg{
+    margin-top: 13vh;
+}
+
+.bClose{
+    padding-left:5px;
+    padding: 5px;    
+    padding-left:10px;
+    padding-bottom:10px;
+    position: absolute;
+    right:1%;
+    top:1%;
+    background:  rgb(51, 53, 58);
+    border: 1px white solid;
+    color:white;
+    height: 15px;
+    width: 15px;
+    z-index: 2;
+    border-radius: 100px;
+}
+
+.bClose:hover{
+    background:  rgb(253, 253, 253);
+    color:black;
+    
+}
+
+.bCloseRS{
+    padding-left:5px;
+    padding: 5px;    
+    padding-left:10px;
+    padding-bottom:10px;
+    position: absolute;
+    right:1%;
+    top:1%;
+    background:  rgb(51, 53, 58);
+    border: 1px white solid;
+    color:white;
+    height: 15px;
+    width: 15px;
+    z-index: 2;
+    border-radius: 100px;
+}
+
+.bCloseRS:hover{
+    background:  rgb(253, 253, 253);
+    color:black;
+    
+}
+
+
+.modalActive{
+    transition: all 200ms linear;
+    opacity: 1;
+    visibility: visible;
+}
+
+.boxRS{
+    top:30vh;
+    left:25vw;
+    position: absolute;
+    width: 50vw;
+    height: 25vh;
+    border-radius: 15px;
+    border: 2px orange solid;
+    background: rgb(0, 0, 0);
+    }
+    
+
+@media (max-width: 1440px){
+
+    .txt_1{
+      
+        top:70vh;
+        left:12vw;
+     
+        width: 20vw;
+        height: 20vh;
+        font-size: 150%;
+        
+    }
+    
+    .txt_2{
+    
+        top:70vh;
+        right:12vw;
+      
+        width: 20vw;
+        height: 20vh;
+        font-size: 150%;
+    }
+    
+    .menu{
+        top:10%;
+        right: -2px;
+        width: 45px;
+        height: 400px;
+        border: 1px orange solid;
+    }
+    
+}
+
+@media (max-width: 1024px){
+
+
+
+    .txt_1{
+      
+        top:70vh;
+        left:12vw;
+     
+        width: 20vw;
+        height: 20vh;
+        font-size: 100%;
+        
+    }
+    
+    .txt_2{
+    
+        top:70vh;
+        right:12vw;
+      
+        width: 20vw;
+        height: 20vh;
+        font-size: 100%;
+    }
+    
+    .menu{
+        
+        top:10%;
+        right: -2px;
+        width: 35px;
+        height: 80%;
+        border: 1px orange solid;
+    }
+}
+
+
+@media (max-width: 768px){
+    .copo{
+        width: 30%;
+        left: 35%; 
+        
+    }
+}
+
+@media (max-width: 425px){
+    .copo{
+        width: 50%;
+        left: 23%; 
+    }
+    .folhas{
+        width: 80vh;
+        position: absolute;
+        top:0px;
+        right: 0px;
+        
+    }
+    
+    .laranja{
+    visibility: hidden;
+    }
+
+    .txt_1{
+      
+        top:70vh;
+        left:5vw;
+     
+        width: 20vw;
+        height: 20vh;
+        font-size: 80%;
+        
+    }
+    
+    .txt_2{
+    
+        top:70vh;
+        right:7vw;
+      
+        width: 20vw;
+        height: 20vh;
+        font-size: 80%;
+    }
+    
+}
+
+
+@media (max-width: 320px) and (orientation: portrait) {
+    .copo{
+        width: 50%;
+        left: 23%; 
+    }
+
+    .folhas{
+        
+        width: 80vh;
+        position: absolute;
+        top:0px;
+        right: -50px;
+        
+    }
+    
+    .laranja{
+    visibility: hidden;
+    }
+    
+    .txt_1{
+        top:70vh;
+        left:5vw;     
+        width: 20vw;
+        height: 20vh;
+        font-size: 80%;
+        
+    }
+    
+    .txt_2{
+    
+        top:70vh;
+        right:7vw;
+      
+        width: 20vw;
+        height: 20vh;
+        font-size: 80%;
+    }
+    
+    
+.logo{
+    position: absolute;
+    top:10%;
+    left:10%;
+    width: 70%;
+    z-index: 2;
+}
+
+.txtDrinks{
+    display: block;
+    margin-left: 5%;
+    margin-top: 3vh;
+    color: white;
+    width: 80%;
+    height: 13vh;
+    border: none;
+    border-bottom: 1px white solid;
+    padding-right: 3px;
+    font-size:77%;
+}
+
+.txtPetiscos{
+    display: block;
+    margin-left: 5%;
+    margin-top: 3vh;
+    color: white;
+    width: 80%;
+    height: 13vh;
+    border: none;
+    border-bottom: 1px white solid;
+    padding-right: 3px;
+    font-size:77%;
+}
+
+.programacao{
+    display: block;
+    margin-left: 5%;
+    margin-top: 3vh;
+    width: 80%;
+    height: 13vh;
+    border: none;
+    border-bottom: 1px white solid;
+    padding-right: 3px;
+    font-size:77%;
+}
+
+
+.reservasText {
+    width: 80vw;
+    margin-left: 5vw;
+    margin-top:4vh;
+    font-size:77%;
+}
+
+.tarjaICo{
+    width: 25px;
+    margin-left: 18vw; 
+}
+
+.rodaPe{
+    height: 50px;
+}
+
+.menu{
+    height: 40%;
+    border: 1px orange solid;
+}
+
+
+.rodaPe{
+    visibility: hidden;
+}
+
+.modalMsg{
+    z-index: 5;
+    position: fixed;
+    left:0px;
+    top:0px;
+    width: 100%;
+    height: 100%;
+}
+
+#form{
+    position: relative;   
+    top: 13vh;
+}
+label{
+    margin-left: 5%;
+}
+input{
+    width: 90vw;
+    margin: 3vw;
+}
+
+#bt{
+    width: 92vw;
+    margin: 3vw;
+}
+
+textarea{
+    width: 90vw;
+    margin: 3vw;
+}
+
+.boxMsg{
+    position: absolute;
+    padding: 0px;
+    border-radius: 0px;
+    overflow: hidden;
+    position: absolute;
+    margin:0px;
+    top: 0px;
+    left: 0px;
+    width: 98%;
+    height: 98%;
+    border: 1% orange solid;
+    background: rgb(0, 0, 0);
+}
+
+.modalRS{
+        z-index: 5;
+        position: fixed;
+        left:0px;
+        top:0px;
+        width: 100%;
+        height: 100%;
+   
+}
+
+.boxRS{
+    position: absolute;
+    padding: 0px;
+    border-radius: 0px;
+    overflow: hidden;
+    position: absolute;
+    margin:0px;
+    top: 0px;
+    left: 0px;
+    width: 98%;
+    height: 98%;
+    border: 1% orange solid;
+    background: rgb(0, 0, 0);
+}
+
+
+
+.icoRS{
+
+    width: 100%;
+    height: 100%;
+}
+
+.icoRS_Size{
+    padding: 3px;
+    margin:0;
+    margin-top: 8%;
+    margin-left: 43%;
+    width: 60px;
+    display: block;
+}
+
+.icoR{
+    margin-top: 50%;
+}
+}
+
+
+
+@media (max-width: 568px) and (orientation: landscape) {
+    .copo{
+        width: 25%;
+        left: 35%; 
+    }
+
+    .folhas{
+        
+        width: 80vh;
+        position: absolute;
+        top:0px;
+        right: -50px;
+        
+    }
+    
+    .laranja{
+    visibility: hidden;
+    }
+    
+    .txt_1{
+        top:70vh;
+        left:5vw;     
+        width: 20vw;
+        height: 20vh;
+        font-size: 80%;
+    }
+    
+    .txt_2{
+    
+        top:70vh;
+        right:7vw;
+      
+        width: 20vw;
+        height: 20vh;
+        font-size: 80%;
+    }
+    
+    
+.logo{
+    position: absolute;
+    top:5%;
+    left:10%;
+    width: 50%;
+    z-index: 2;
+}
+
+.txtDrinks{
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 3vh;
+    color: white;
+    width: 25%;
+    height: 30vh;
+    border: none;
+    border-right: 1px white solid;
+    padding-right: 3px;
+    font-size:77%;
+}
+
+.txtPetiscos{
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 3vh;
+    color: white;
+    width: 25%;
+    height: 30vh;
+    border: none;
+    border-right: 1px white solid;
+    padding-right: 3px;
+    font-size:77%;
+}
+
+.programacao{
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 3vh;
+    width: 25%;
+    height: 30vh;
+    border: none;
+   
+    padding-right: 3px;
+    font-size:77%;
+}
+
+
+.reservasText {
+    width: 80vw;
+    margin-left: 5vw;
+    margin-top:4vh;
+    font-size:77%;
+}
+
+.tarjaICo{
+    width: 25px;
+    margin-left: 20vw; 
+}
+
+.rodaPe{
+    visibility: hidden;
+}
+
+.menu{
+    top: 5%;
+    height: 80%;
+    border: 1px orange solid;
+}
+}

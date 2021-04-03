@@ -1,0 +1,932 @@
+*{margin:0px; image-rendering: optimizeQuality; pointer-events: none; box-sizing: border-box; overflow-x: hidden; overflow-y: hidden; box-sizing: border-box; font-family: 'Roboto', sans-serif;}
+
+::selection{
+    background-color: none;
+    color: none;
+}
+
+body{
+    background-color: black;
+    scrollbar-base-color: black;
+}
+
+h3{
+    font-weight: normal;
+}
+
+html{
+    overflow-y: visible;
+}
+.pagePrincipal{
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+}
+
+.laranja{
+    position: absolute;
+    top:2vh;
+    left:50%;
+    width: 15vw;
+}
+
+.pageBackGround{
+    width: 100vw;
+    height: 100vh;
+}
+
+.logo{
+    position: absolute;
+    top:10%;
+    left:10%;
+    width: 350px;
+    z-index: 2;
+}
+
+.logo-{
+    width: 100%;
+    z-index: 2;
+    image-rendering: optimizeQuality;
+}
+
+.copo{
+    width: 20%;
+    position: absolute;
+    left: 39%;
+    bottom: 0%;
+    z-index: 1;
+}
+
+.menu{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: fixed;
+    top:0px;
+    left: -2px;
+    width: 45px;
+    height: 100vh;
+    
+    background-color: rgb(61, 61, 61); 
+}
+
+
+.bHome{
+    background-color: orange;
+}
+
+.bHome:hover{
+    background-color: rgb(253, 179, 43);
+}
+
+.icoSizeHome{
+    cursor: pointer;
+    pointer-events: visible;
+    display: block;
+    width: 75%;
+    margin-left: 12%;
+}
+
+.icoSize{
+    cursor: pointer;
+    pointer-events: visible;
+    display: block;
+    width: 75%;
+    
+    margin-top: 20px;
+    transition: all 200ms linear;
+}
+
+.icoSize:hover{
+    transform: scale(1.3);
+    transition: all 200ms linear;
+}
+
+.reservas{
+    position: absolute;
+    top:100vh;
+    width: 100%;
+    left:0px;
+
+    
+}
+
+
+.cadastrar{
+    margin-top: 30px;
+    background-color: rgb(252, 238, 192);
+    width: 100vw;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxCadastrar{
+    width: 600px;
+}
+
+.boxCadastrar-titulo{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.boxCadastrarTextEnviar{
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    background-color: white;
+}
+
+.boxCadastrar-boxEnviar{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.textEnviar{
+    pointer-events: all;
+    display: block;
+    padding-top: 10px;
+    outline: none;
+}
+
+.textEnviar::selection{
+    background-color: orange;
+
+}
+
+.bEnviar{
+    pointer-events: visible;
+    width: 150px;
+    height: 100%;
+    padding: 10px 20px;
+    background-color: orange;
+    cursor: pointer;
+}
+
+.bEnviar:hover{
+    background-color: rgb(255, 189, 67);
+}
+
+.bEnviar span{
+    pointer-events: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.drink{
+    position: relative;
+    cursor: pointer;
+    pointer-events: visible;
+    padding: 10px;
+    width: 180px;
+    margin-left: 20px;
+   
+}
+
+.drink:hover{
+    width: 180px;
+    background-color: rgb(0, 0, 0);
+    outline: 2px orange solid;
+    box-sizing:border-box;
+}
+
+.drink-foto{
+    width: 100%;
+}
+
+.drink-nome{
+    display: block;
+    text-transform:uppercase;
+    font-weight: bolder;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+.drink-description{
+    display: block;
+    color: white;
+    font-size: 14px;
+}
+
+.direitos{
+    font-size: 12px;
+    width: calc(80% - 30px);
+    margin-left: calc(10% + 30px);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.txt_1{
+    z-index: 1;
+    text-align: right;
+    
+    color:rgb(202, 202, 202);
+    font-size: 15px;
+    
+}
+
+
+
+.txt_2{
+    z-index: 1;
+    position: absolute;
+    top:80vh;
+    left:calc(50% + 100px);
+    color:white;
+    width: 250px;
+    height: 30vh;
+    font-size: 15px;
+}
+
+.tarjaSuperior{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+
+.tarjaICo{
+    align-items: center;
+    width: 110px;
+    margin-left: 16vw; 
+}
+
+.jonnie{
+    width: 80px;
+}
+
+.rodaPe{
+    position: absolute;
+    bottom: 0px;
+    height: 130px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: rgb(0, 0, 0);
+}
+
+.Franqueado{
+    float: right;
+    height: 100%;
+    width:30%;
+    background: orange;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.txtDrinks{
+    display: inline-block;
+    margin-left: 13%;
+    margin-top: 3vh;
+    color: white;
+    width: 20%;
+    height: 30vh;
+    border-right: 1px white solid;
+    padding-right: 3px;
+}
+
+.txtPetiscos{
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 3vh;
+    color: white;
+    width: 20%;
+    height: 30vh;
+    border-right: 1px white solid;
+    padding-right: 3px;
+}
+
+.programacao{
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 3vh;
+    color: white;
+    width: 20%;
+    height: 30vh;
+    overflow-y: hidden;
+    padding-right: 3px;
+}
+
+.textFranqueado{
+font-size: 150%;
+margin: 10%;
+text-align: center;
+}
+
+.map{
+    height: 100%;
+    width: 70%;
+    overflow-y: hidden;
+}
+
+.folhas{
+    width: 80vh;
+    position: absolute;
+    top:0px;
+    right: 0px;
+    
+}
+
+.modalMsg{
+    z-index: 3;
+    position: fixed;
+    left:0px;
+    top:0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.8);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 200ms linear;
+}
+
+.modalRS{
+    z-index: 3;
+    position: fixed;
+    left:0px;
+    top:0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.8);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 200ms linear;
+}
+
+.icoRS{
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    z-index: 1;
+    top: 93%;
+    left: 85%;
+    padding:10px;
+}
+
+.icoRS_Size{
+    cursor: pointer;
+    pointer-events: visible;
+    z-index: 1;
+    width: 20px;
+    margin-left: 10px;
+    transition: all 200ms linear;
+}
+
+.icoRS_Size:hover{
+ transform: scale(1.3);
+    transition: all 200ms linear;
+}
+
+
+
+.drinksBackGround{
+    z-index: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+     
+
+}
+
+.preco{
+    display: none;
+    position: absolute;
+    font-size: 20px;
+    font-weight: bolder;
+    top:8px;
+    left:10px;
+    color: orange;
+    text-shadow: 2px 2px black;
+}
+
+.boxFlex_Reservas{
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    z-index: 1000;
+    margin-top:20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.quadroNegro{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.tituloSession{
+    position: relative;
+    color:orange;
+    font-weight: bolder;
+    margin-left: 60px;
+    margin-top: 20px;
+    z-index: 1;
+    width: 100%;
+    font-size: 15;
+    text-align: center;
+}
+
+.tituloSessionMarginTop{
+    margin-top: 100px;
+}
+
+.rodaPe-{
+    position: relative;
+    display: block;
+    width: 100vw;
+
+}
+
+.rodaPe- span{
+    margin-top: 30px;
+    text-align: center;
+    display: block;
+    color: orange;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+
+.bSeta-{
+    margin-left: calc(50% - 85px);
+    width: 200px;
+    cursor: pointer;
+    pointer-events: visible;
+    transition: all 200ms linear;
+}
+
+.bSeta-:hover{
+    transform: scale(1.2);
+    transition: all 200ms linear;
+}
+
+
+.fotos-bar-flex{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.foto-bar{
+    width: 25%;
+}
+
+.ondeEstamos{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: rgb(48, 48, 48);
+    width: 100%;
+    font-size: 30px;
+    font-weight: bolder;
+
+    text-align: center;
+}
+
+
+.localiza{
+
+    padding-left: 40px;
+
+    background-color:  orange;
+    position: relative;
+    display: block;
+}
+
+.mapa-{
+    position: relative;
+    height: 300px;
+    width: 300vw;
+    z-index: 3;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.frame-Mapa{
+    z-index: 6;
+    width: 100%;
+    height: 100%; 
+}
+
+.boxCadastre-se{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxCadastre-se-Box{
+    width: 500px;
+}
+
+.boxCadastre-se-titulo{
+    color: white;
+    margin-bottom: 20px;
+    width: 100%;
+    font-weight: normal;
+    text-align: center;
+}
+
+.boxCadastre-se-BoxDados{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: calc(100% - 5px);
+    height: 40px;
+}
+
+.boxCadastre-se-text{
+    width: calc(100% - 5px);
+    background-color: white;
+}
+
+.boxCadastre-se-input::selection{
+    background-color: orange;
+}
+
+.boxCadastre-se-btEnviar{
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+.boxCadastre-se-bt-Responsivo{
+    display: none;
+    width: calc(90% - 5px);
+}
+
+.boxCadastre-se-bt-Responsivo:hover{
+    background-color: rgb(253, 190, 71);
+}
+
+.boxCadastre-se-bt{
+    position: relative;
+    pointer-events: visible;
+    width: 150px;
+    height: 100%;
+    background-color: orange;
+    cursor: pointer;
+}
+
+.boxCadastre-se-bt:hover{
+    background-color: rgb(252, 178, 42);
+}
+
+.boxCadastre-se-input{
+    margin-left: 10px;
+    pointer-events: visible;
+    position: relative;
+    display: block;
+    outline: none;
+    margin-top: 10px;
+}
+
+.tArea{
+    margin-top: 15px;
+    width: 100%;
+}
+
+.fonte{
+    font-weight: normal;
+    font-size: 14px;
+    color: white;
+    margin-top: 15px;
+}
+
+.center{
+    text-align: center;
+    color: orange;
+}
+
+
+.foneReservas-{
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.boxMsg{
+    left:calc(50vw - 300px);
+    position: absolute;
+    width: 600px;
+    height: 100vh;
+    border-left: 2px orange solid;
+    border-right: 2px orange solid;
+    border-bottom: 2px orange solid;
+    background: rgb(0, 0, 0);
+}
+
+#msg{
+    height: 140px;
+    border: 0px;
+    
+    margin-bottom:10px;
+}
+
+input{
+    margin-bottom:10px;
+    padding: 4px;
+    border:none;
+    width: 100%;
+}
+
+#bt{
+    margin-bottom:10px;
+    padding: 4px;
+    border:none;
+    width: 100%;
+    color:orange;
+    background: rgb(51, 53, 58);
+    border: 1px rgb(98, 99, 100) solid;
+}
+
+label{
+    padding-top:5px;
+    color: orange;
+}
+
+#boxTitulo{
+padding: 10px;
+height: 80px;
+background: orange;
+border: 2px orange solid;
+box-sizing: border-box;
+}
+
+#boxTitulo h4{
+    width: 90%;
+    color:black;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#f_msg{
+padding: 10px;
+}
+
+.bClose{
+    padding: 5px;    
+    position: absolute;
+    right:1%;
+    top:1%;
+    font-size: 20px;
+    text-align: center;
+    background:  rgb(51, 53, 58);
+    border: 1px white solid;
+    color:white;
+    height: 35px;
+    width: 40px;
+    z-index: 2;
+}
+
+.bClose:hover{
+    background:  rgb(253, 253, 253);
+    color:black;
+    
+}
+
+.bCloseRS{
+    padding: 5px;    
+    position: absolute;
+    right:1%;
+    top:1%;
+    font-size: 20px;
+    text-align: center;
+    background:  rgb(51, 53, 58);
+    border: 1px white solid;
+    color:white;
+    height: 35px;
+    width: 40px;
+    z-index: 2;
+}
+
+
+
+.bCloseRS:hover{
+    background:  rgb(253, 253, 253);
+    color:black;
+    
+}
+
+
+.modalActive{
+    transition: all 200ms linear;
+    opacity: 1;
+    visibility: visible;
+}
+
+.boxRS{
+    left:calc(50vw - 300px);
+    top:calc(50vh - 200px);
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    border-left: 2px orange solid;
+    border-right: 2px orange solid;
+    border-bottom: 2px orange solid;
+    background: rgb(0, 0, 0);
+    }
+
+    @media (max-width:1120px){
+        .icoRS{
+            left:80%;
+        }
+    }
+
+    @media (max-width:1000px){
+        .icoRS{
+            left:70%;
+        }
+
+
+    }
+
+    @media (max-width:800px){  
+.folhas{
+    right: -100px;
+    
+}
+    }
+
+    @media (max-width:600px){
+        .icoRS{
+            left:40px;
+        }
+
+
+    .tituloSession{
+        margin-left: 50px;
+        font-size: 18px;
+        width: 80%;
+    }
+        .boxCadastre-se-Box{
+            width: calc(70%-30px);
+            margin-left: calc(5% + 30px);
+        }
+
+        .boxCadastre-se-bt{
+            display: none;
+        }
+
+        .ondeEstamos{
+            font-size: 20px;
+        }
+
+        .boxCadastre-se-bt-Responsivo{
+            display: block;
+            margin-top: 10px;
+            position: relative;
+            pointer-events: visible;
+            width: calc(100% - 10px);
+            height: 40px;
+            background-color: orange;
+            cursor: pointer;
+        }
+
+    }
+
+
+@media (max-width:1000px){
+    .boxRS{
+        overflow: hidden;
+        overflow-y: visible;
+        left:0px;
+        top:0px;
+        width: 100vw;
+        height: 100vh;
+        border:none;
+    }
+.boxMsg{
+    overflow: hidden;
+    overflow-y: visible;
+    top:0px;
+    left:0px;
+    width: 100vw;
+    height: 100vh;
+    border:none;   
+}
+    
+#boxTitulo h4{
+    font-weight: normal;
+}
+
+}    
+
+@media (min-width: 800px) and (max-width: 1100px){
+    .copo{
+        width: 280px;
+        left:35vw;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 800px){
+    .copo{
+        width: 280px;
+        left:45vw;
+    }
+
+    .txt_2{
+        top:60vh;
+        left:8vw;
+    }
+}
+
+
+@media (min-width: 230px) and (max-width: 600px){
+    .copo{
+        width: 280px;
+        left:45vw;
+    }
+
+    .txt_2{
+        top:60vh;
+        left: 15vw;
+        font-size: 15px;
+    }
+
+    
+
+    .folhas{
+        width: 280px;
+        right: -50px;
+    }
+
+    .laranja{
+        top: -80px;
+        width: 150px;
+    }
+
+    .logo, .logo-{
+        width: 300px;
+        left:15vw;
+    }
+    
+
+    
+    .txt_1{
+        left: 15vw;
+        font-size: 15px;
+    }
+
+   
+    .fonte{
+        font-size: 15px;
+        font-weight:bolder;
+    }
+    
+}
+
+
+
+@media (min-width: 230px) and (max-width: 450px){
+  
+    .folhas{
+        right: -100px;   
+    }
+
+    .logo, .logo-{
+        width: 200px;
+        left:15vw;
+    }
+}
