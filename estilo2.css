@@ -1,4 +1,4 @@
-*{margin:0px; image-rendering: optimizeQuality; pointer-events: none; box-sizing: border-box; overflow-x: hidden; overflow-y: hidden; box-sizing: border-box; font-family: 'Roboto', sans-serif;}
+*{user-select: none; margin:0px; image-rendering: optimizeQuality; pointer-events: none; box-sizing: border-box; overflow-x: hidden; overflow-y: hidden; box-sizing: border-box; font-family: 'Roboto', sans-serif;}
 
 ::selection{
     background-color: none;
